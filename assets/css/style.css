@@ -70,6 +70,9 @@ main section {
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    /*temporary hide start stage */
+    display: none;
+    /*temporary hide start stage */
 }
 .start h2 {
     text-align: center;
@@ -93,6 +96,52 @@ main section {
 }
 
 .start button:hover {
+    background-color: #fff;
+    color: orangered;
+}
+
+
+/*playing stage*/
+.playing {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity .5s ease;
+}
+
+.luck img {
+    width: 180px;
+    height: auto;
+    margin: 90px 0 40px 0;
+}
+.winner {
+    font-size: 20px;
+    margin-top: 40px;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 600;
+}
+.luck, .option {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.option button {
+    width: 140px;
+    height: 50px;
+    font-size: 25px;
+    background-color: red;
+    margin: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: .4s ease;
+}
+.option button:hover {
     background-color: #fff;
     color: orangered;
 }
