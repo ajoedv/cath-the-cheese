@@ -12,6 +12,8 @@ startBtn.addEventListener('click', () => {
 // select Random Img by clicking catch btn
 function selectRandomImage() {
     var img = document.getElementsByClassName("your-choice")[0];
+    var winner = document.getElementsByClassName("winner")[0];
+
 
      // Generate a random number between 0 and 1
      var randomNum = Math.floor(Math.random() * 2);
@@ -19,7 +21,9 @@ function selectRandomImage() {
      // Set the image source based on the random number
      if (randomNum === 1) {
         img.src = "./assets/images/cheese1.png";
+        winner.textContent = 'You Win';
       } else {
         img.src = "./assets/images/mouse.png";
+        winner.textContent = 'You Lost';
       }
 }
