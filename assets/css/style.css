@@ -155,14 +155,15 @@ main section {
 footer {
     background-color:rgb(224, 179, 96) ;
     width: 100%;
-    height: 50px;
+    height: auto;
     text-align: center;
     position: absolute;
-
+    padding: 20px;
 }
 footer h2 {
-    font-size: .9rem;
-    line-height: 50px;
+    margin: 10px;
+    line-height: 15px;
+
 }
 
 
