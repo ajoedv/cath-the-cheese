@@ -23,9 +23,17 @@ function selectRandomImage() {
         img.src = "./assets/images/cheese1.png";
         winner.textContent = 'You Win';
         yscore.textContent = Number(yscore.textContent) + 1;
+        if (yscore.textContent == 10) {
+            winner.textContent = 'Game Over - You Win! refresh the page';
+            document.getElementById('catch_btn').disabled = true;
+        }
       } else {
         img.src = "./assets/images/mouse.png";
         winner.textContent = 'You Lost';
         mscore.textContent = Number(mscore.textContent) + 1;
+        if (mscore.textContent == 10) {
+            winner.textContent = 'Game Over - You Lost! refresh the page';
+            document.getElementById('catch_btn').disabled = true;
+        }
       }
 }
