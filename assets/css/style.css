@@ -31,7 +31,7 @@ body {
 main {
     display: flex;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 80vh;
 }
 
 
@@ -144,10 +144,27 @@ main section {
     color: orangered;
 }
 
+
 /* to hide start stage and display playing stage*/
 .hide {
     display: none;
 }
+
+
+/*footer*/
+footer {
+    background-color:rgb(224, 179, 96) ;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    position: absolute;
+
+}
+footer h2 {
+    font-size: .9rem;
+    line-height: 50px;
+}
+
 
 /* @media screen 360px */
 @media screen and (max-width: 600px) {
