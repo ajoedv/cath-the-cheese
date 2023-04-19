@@ -1,9 +1,9 @@
 
-const startBtn = document.getElementById("start_btn");
-const startScreen = document.getElementsByClassName("start")[0];
-const gameScreen = document.getElementsByClassName("playing")[0];
-let yscore = document.getElementById("yscore");
-let mscore = document.getElementById("mscore");
+var startBtn = document.getElementById("start_btn");
+var startScreen = document.getElementsByClassName("start")[0];
+var gameScreen = document.getElementsByClassName("playing")[0];
+var yscore = document.getElementById("yscore");
+var mscore = document.getElementById("mscore");
 
 // clice event to hide start stage and display playing stage
 startBtn.addEventListener('click', () => {
