@@ -22,8 +22,10 @@ function selectRandomImage() {
      if (randomNum === 1) {
         img.src = "./assets/images/cheese1.png";
         winner.textContent = 'You Win';
+        yscore.textContent = Number(yscore.textContent) + 1;
       } else {
         img.src = "./assets/images/mouse.png";
         winner.textContent = 'You Lost';
+        mscore.textContent = Number(mscore.textContent) + 1;
       }
 }
