@@ -1,5 +1,13 @@
-Dockerfile linguist-detectable=false
-.devcontainer/* linguist-detectable=false
-*.html linguist-detectable=false
-*.css linguist-detectable=false
-*.js linguist-detectable=true
+# Exclude development container files from GitHub language stats
+.devcontainer/** linguist-vendored
+**/Dockerfile linguist-vendored
+Dockerfile linguist-vendored
+
+# Exclude documentation from language stats
+docs/** linguist-documentation
+README.md linguist-documentation
+
+# Keep the actual game language detectable
+*.js linguist-language=JavaScript
+*.html linguist-vendored
+*.css linguist-vendored
